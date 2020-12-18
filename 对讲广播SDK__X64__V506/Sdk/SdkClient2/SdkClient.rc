@@ -1,0 +1,313 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SdkClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\SdkClient.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SdkClient"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "SdkClient 1.0.1 版",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2016",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SDKCLIENT_DIALOG DIALOGEX 0, 0, 712, 457
+STYLE DS_SETFONT | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SdkClient__V5.0.6"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CBX_TERM_LIST,68,18,294,318,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "打开通话",IDC_BTN_OPEN_TALK,24,87,67,20
+    PUSHBUTTON      "关闭通话",IDC_BTN_CLOSE_TALK,24,114,67,20
+    PUSHBUTTON      "解除呼叫",IDC_BTN_DISMISS_TALK,24,141,68,20
+    PUSHBUTTON      "创建广播分区",IDC_BTN_SETUP_BROAD_GROUP,213,58,119,20
+    PUSHBUTTON      "开启广播喊话",IDC_BTN_START_BROAD_VOICE,193,103,67,20
+    PUSHBUTTON      "关闭广播喊话",IDC_BTN_STOP_BROAD_VOICE,193,130,67,20
+    PUSHBUTTON      "开启广播MP3",IDC_BTN_START_BROAD_MP3,284,81,67,20
+    PUSHBUTTON      "播放MP3文件",IDC_BTN_BROAD_MP3_FILE,284,104,67,20
+    PUSHBUTTON      "关闭广播MP3",IDC_BTN_STOP_BROAD_MP3,284,150,67,20
+    EDITTEXT        IDC_EDT_485_PIPE_DATA,269,217,83,44,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    EDITTEXT        IDC_EDT_SEND_485_DATA,380,221,79,15,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "发送485数据",IDC_BTN_SEND_485,387,247,67,20
+    COMBOBOX        IDC_CMB_AMP,635,202,48,177,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_CAP,635,221,48,171,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMB_CAP_TALK,635,240,48,145,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "获取音量",IDC_GET_LEVEL,590,265,45,18
+    PUSHBUTTON      "设置音量",IDC_SET_LEVEL,643,265,45,18
+    CONTROL         "开启喧哗报警",IDC_CHK_DB_ALARM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,603,357,64,10
+    EDITTEXT        IDC_EDT_DB_VAL,633,375,28,14,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN_DB_VAL,"msctls_updown32",UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | UDS_NOTHOUSANDS,676,355,11,14
+    PUSHBUTTON      "获取配置",IDC_GET_DB_ALM,616,398,56,18
+    PUSHBUTTON      "保存配置",IDC_SET_DB_ALM,616,424,56,18
+    LISTBOX         IDC_LIST_INFO,21,301,529,138,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "信息记录：",IDC_STATIC,11,287,549,162
+    GROUPBOX        "终端对讲",IDC_STATIC,13,46,159,149
+    CTEXT           "呼叫提示：",IDC_STATIC_TIPS,37,61,93,18
+    GROUPBOX        "485透明管道数据（接收）",IDC_STATIC,254,204,105,70
+    GROUPBOX        "485透明管道数据（发送）",IDC_STATIC,365,204,103,70
+    CONTROL         "",IDC_STATIC_TERM,"Static",SS_BLACKRECT,379,4,301,178
+    LTEXT           "终端设备列表",IDC_STATIC,12,19,52,8
+    GROUPBOX        "终端广播",IDC_STATIC,183,46,177,149
+    GROUPBOX        "音量控制",IDC_STATIC,567,189,141,138
+    LTEXT           "功放输出",IDC_STATIC,596,205,37,8
+    LTEXT           "对讲范围",IDC_STATIC,596,243,37,8
+    LTEXT           "监听范围",IDC_STATIC,596,224,37,8
+    GROUPBOX        "喧哗报警配置",IDC_STATIC,582,337,114,114
+    LTEXT           "报警音量",IDC_STATIC,596,379,35,8
+    LTEXT           "(db) ",IDC_STATIC,663,378,21,8
+    PUSHBUTTON      "请求 I 帧",IDC_BTN_REQ_I_FRM,24,168,67,20
+    GROUPBOX        "IO口控制",IDC_STATIC,13,207,82,70
+    PUSHBUTTON      "打开报警输出1",IDC_BTN_OPEN_ALM_OUT_1,22,222,63,20
+    PUSHBUTTON      "打开报警输出2",IDC_BTN_OPEN_ALM_OUT_2,22,248,63,20
+    GROUPBOX        "修改分机名称",IDC_STATIC,100,207,78,70
+    EDITTEXT        IDC_EDIT_TERM_NAME,112,225,56,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "修改",IDC_BTN_CHANGE_NAME,112,248,51,20
+    PUSHBUTTON      "清除信息记录",IDC_BTN_CLEAR,227,277,60,14
+    PUSHBUTTON      "打开通话\n(子通道)",IDC_BTN_OPEN_TALK_SUB,116,100,50,25,BS_MULTILINE
+    PUSHBUTTON      "关闭通话\n(子通道)",IDC_BTN_CLOSE_TALK_SUB,116,131,50,25,BS_MULTILINE
+    PUSHBUTTON      "请求 I 帧\n(子通道)",IDC_BTN_REQ_I_FRM_SUB,116,162,50,25,BS_MULTILINE
+    EDITTEXT        IDC_EDT_USER_DATA,481,206,73,15,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "获取",IDC_BTN_GET_USER_DATA,496,249,43,20
+    GROUPBOX        "客户数据",IDC_STATIC,475,191,85,83
+    EDITTEXT        IDC_EDT_WRITE_DATE,481,227,58,15,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    PUSHBUTTON      "Add",IDC_BTN_ADD,201,175,35,14
+    PUSHBUTTON      "Del",IDC_BTN_DEL,246,175,35,14
+    PUSHBUTTON      "Get",IDC_BTN_GET,291,175,35,14
+    LTEXT           "影子分组API测试：",IDC_STATIC,202,162,76,8
+    PUSHBUTTON      "监听",IDC_BTN_OPEN_MON,137,59,29,14
+    PUSHBUTTON      "关闭",IDC_BTN_CLOSE_MON,137,78,29,14
+    PUSHBUTTON      "暂停MP3广播",IDC_BTN_PAUSE_MP3_BROAD,284,127,67,20
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_TOP | TBS_NOTICKS | WS_TABSTOP,571,303,132,14
+    LTEXT           "0",IDC_STATIC,575,293,8,8
+    LTEXT           "100",IDC_STATIC,690,293,13,8
+    LTEXT           "当前:0",IDC_STATIC_CUR,622,293,41,8
+    GROUPBOX        "修改铃声时间",IDC_STATIC,184,204,63,69
+    EDITTEXT        IDC_EDIT_WAIT_TIME,197,221,24,14,ES_CENTER | ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "修改",IDC_BTN_CHANGE_WAIT_TIME,197,244,38,20
+    LTEXT           "秒",IDC_STATIC,225,224,14,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,0
+ PRODUCTVERSION 1,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "FileDescription", "SdkClient Microsoft 基础类应用程序"
+            VALUE "FileVersion", "1, 0, 1, 0"
+            VALUE "InternalName", "SdkClient"
+            VALUE "LegalCopyright", "版权所有 (C) 2015"
+            VALUE "OriginalFilename", "SdkClient.EXE"
+            VALUE "ProductName", "SdkClient 应用程序"
+            VALUE "ProductVersion", "1, 0, 1, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SDKCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 705
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 450
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SDKCLIENT_DIALOG DLGINIT
+BEGIN
+    IDC_CMB_AMP, 0x403, 7, 0
+0x5830, 0xb2be, 0xf4d2, "\000" 
+    IDC_CMB_AMP, 0x403, 3, 0
+0x5831, "\000" 
+    IDC_CMB_AMP, 0x403, 3, 0
+0x5832, "\000" 
+    IDC_CMB_AMP, 0x403, 3, 0
+0x5833, "\000" 
+    IDC_CMB_AMP, 0x403, 3, 0
+0x5834, "\000" 
+    IDC_CMB_AMP, 0x403, 3, 0
+0x5835, "\000" 
+    IDC_CMB_AMP, 0x403, 3, 0
+0x5836, "\000" 
+    IDC_CMB_AMP, 0x403, 3, 0
+0x5837, "\000" 
+    IDC_CMB_AMP, 0x403, 3, 0
+0x5838, "\000" 
+    IDC_CMB_AMP, 0x403, 3, 0
+0x5839, "\000" 
+    IDC_CMB_AMP, 0x403, 8, 0
+0x3031, 0xd758, 0xb4ee, 0x00f3, 
+    IDC_CMB_CAP, 0x403, 4, 0
+0xc332, 0x00d7, 
+    IDC_CMB_CAP, 0x403, 4, 0
+0xc334, 0x00d7, 
+    IDC_CMB_CAP, 0x403, 4, 0
+0xc336, 0x00d7, 
+    IDC_CMB_CAP, 0x403, 4, 0
+0xc338, 0x00d7, 
+    IDC_CMB_CAP_TALK, 0x403, 6, 0
+0x2e30, 0xc335, 0x00d7, 
+    IDC_CMB_CAP_TALK, 0x403, 6, 0
+0x2e30, 0xc338, 0x00d7, 
+    IDC_CMB_CAP_TALK, 0x403, 6, 0
+0x2e31, 0xc332, 0x00d7, 
+    IDC_CMB_CAP_TALK, 0x403, 6, 0
+0x2e31, 0xc338, 0x00d7, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "关于 SdkClient(&A)..."
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SdkClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

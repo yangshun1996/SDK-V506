@@ -1,0 +1,40 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SdkClient - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/SdkClient.res" /d "NDEBUG" /d "_AFXDLL" "E:\Fuliang_New\Release\软件发布\Alean\软件升级包（2018-10-09）\对讲广播SDK__V503\Sdk\SdkClient2\SdkClient.rc"" 
+Creating temporary file "C:\Users\asus\AppData\Local\Temp\RSPC8D8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/SdkClient.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Fuliang_New\Release\软件发布\Alean\软件升级包（2018-10-09）\对讲广播SDK__V503\Sdk\SdkClient2\SdkClient.cpp"
+"E:\Fuliang_New\Release\软件发布\Alean\软件升级包（2018-10-09）\对讲广播SDK__V503\Sdk\SdkClient2\SdkClientDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\asus\AppData\Local\Temp\RSPC8D8.tmp" 
+Creating temporary file "C:\Users\asus\AppData\Local\Temp\RSPC8D9.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/SdkClient.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\Fuliang_New\Release\软件发布\Alean\软件升级包（2018-10-09）\对讲广播SDK__V503\Sdk\SdkClient2\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\asus\AppData\Local\Temp\RSPC8D9.tmp" 
+Creating command line "link.exe ../Include/CtsSdk.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/SdkClient.pdb" /machine:I386 /out:"../Exe2/SdkClient.exe"  ".\Release\SdkClient.obj" ".\Release\SdkClientDlg.obj" ".\Release\StdAfx.obj" ".\Release\SdkClient.res" "
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+SdkClient.cpp
+SdkClientDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SdkClient.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
